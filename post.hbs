@@ -94,6 +94,11 @@ into the {body} tag of the default.hbs template --}}
         </section>
     {{/if}}
 
+    <!-- Insert the EthicalAds div here -->
+    <footer class="post-full-footer">
+        <div class="adaptive raised" data-ea-publisher="jerrynshcom" data-ea-type="text" data-ea-style="fixedfooter" data-ea-keywords="{{#foreach tags}}{{slug}}{{#unless @last}}|{{/unless}}{{/foreach}}"></div>
+    </footer>
+
 </article>
 </main>
 
